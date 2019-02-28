@@ -25,6 +25,9 @@
 									$dia = strftime( '%d', strtotime($data));
 									$mes = strftime( '%b', strtotime($data));
 									$ano = strftime( '%Y', strtotime($data));
+
+
+									
 								?>
 
 							  <div class="carousel-item <?php
