@@ -52,7 +52,7 @@
                               $anos = date( 'Y', strtotime($datapublicacao));
                               $nome = $sessao[$j]['nome'];
                               $sessoes = $sessao[$j]['sessao'];
-                              $arquivo = $sessao[$j]['arquivo'];
+							  $arquivo = str_replace(" ", "_", $sessao[$j]['arquivo']);
                               $dataFormat = date("d/m/Y", strtotime($datapublicacao))
                             ?>
 
@@ -72,7 +72,7 @@
                                     ?>
                                   </h6>
                                   <p class="card-text" style="font-size: 11px;">Publicado em: <?=  $dataFormat?></p>
-                                    <a href="<?=base_url()?>content/sessoes/ordinarias/<?= $anos."/".$arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
+                                    <a href="<?=base_url()?>content/sessoes/<?= $arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
                                 </div>
                               </div>
                             </div>
@@ -118,7 +118,7 @@
 										$anos = date( 'Y', strtotime($datapublicacao));
 										$nome = $sessao[$j]['nome'];
 										$sessoes = $sessao[$j]['sessao'];
-										$arquivo = $sessao[$j]['arquivo'];
+										$arquivo = str_replace(" ", "_", $sessao[$j]['arquivo']);
 										$dataFormat = date("d/m/Y", strtotime($datapublicacao))
 										?>
 
@@ -138,7 +138,7 @@
 															?>
 														</h6>
 														<p class="card-text" style="font-size: 11px;">Publicado em: <?=  $dataFormat?></p>
-														<a href="<?=base_url()?>content/sessoes/extraordinarias/<?= $anos."/".$arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
+														<a href="<?=base_url()?>content/sessoes/<?= $arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
 													</div>
 												</div>
 											</div>
@@ -185,7 +185,7 @@
 										$anos = date( 'Y', strtotime($datapublicacao));
 										$nome = $sessao[$j]['nome'];
 										$sessoes = $sessao[$j]['sessao'];
-										$arquivo = $sessao[$j]['arquivo'];
+										$arquivo = str_replace(" ", "_", $sessao[$j]['arquivo']);
 										$dataFormat = date("d/m/Y", strtotime($datapublicacao))
 										?>
 
@@ -205,7 +205,7 @@
 															?>
 														</h6>
 														<p class="card-text" style="font-size: 11px;">Publicado em: <?=  $dataFormat?></p>
-														<a href="<?=base_url()?>content/sessoes/extraordinarias/<?= $anos."/".$arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
+														<a href="<?=base_url()?>content/sessoes/<?= $arquivo ?>" class="btn btn-info" target="_blank" style="width:  100%; border-radius:  inherit;"><i class="fas fa-cloud-download-alt"></i> Baixar</a>
 													</div>
 												</div>
 											</div>
