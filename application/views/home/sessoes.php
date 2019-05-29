@@ -201,7 +201,7 @@
 
 															<?php
 															if($sessoes == 0) echo  $nome." ".$anos;
-															else  echo $sessoes." - S. Extraordinárias de ".$anos;
+															else  echo $sessoes." - S. Solenes de ".$anos;
 															?>
 														</h6>
 														<p class="card-text" style="font-size: 11px;">Publicado em: <?=  $dataFormat?></p>
