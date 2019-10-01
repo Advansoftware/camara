@@ -11,7 +11,7 @@
 
 							echo "<div class='card bg-dark text-white text-center mt-3 ml-3 d-inline-block border border-warning' style='width: 18rem'>";
 							echo "<div class='bg-white' style='position: relative;width: 17.9rem; height: 10rem;padding: 3rem;' >";
-							echo "<img class='imgPartidosmesa p-2' src='".base_url()."content/imagens/partidos/".$cargo[$i]["partido"].".png'    alt='Card image'>";
+							echo "<img class='imgPartidosmesa p-2' src='".base_url()."content/imagens/partidos/".$cargo[$i]["imagem_partido"]."' alt='Card image'>";
 							echo "</div>";
 
 							echo "<div class='card-body'>";
@@ -40,7 +40,7 @@
 						if($cargo[$i]["nome_cargo"]==null){
 							echo "<div class='card bg-dark text-white text-center mt-3 ml-3 d-inline-block border border-warning' style='width: 18rem'>";
 							echo "<div class='bg-white' style='position: relative;width: 17.9rem; height: 10rem;padding: 3rem;' >";
-							echo "<img class='imgPartidosmesa p-2' src='".base_url()."content/imagens/partidos/".$cargo[$i]["partido"].".png'    alt='Card image'>";
+							echo "<img class='imgPartidosmesa p-2' src='".base_url()."content/imagens/partidos/".$cargo[$i]["imagem_partido"]."'    alt='Card image'>";
 							echo "</div>";
 
 							echo "<div class='card-body'>";

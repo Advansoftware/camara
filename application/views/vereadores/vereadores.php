@@ -4,6 +4,7 @@
   <div class="col-md-10">
     <div class="col text-center">
       <div class="row">
+
         <?php foreach ($vereadores as $info) : ?>
 
             <div class="col-lg-3 offset-md-0 mt-3 align-items-center">
@@ -15,7 +16,7 @@
             </div>
                <ul class="list-group list-group-flush">
                 <?php if($info->partido != null):?>
-                   <li class="list-group-item"><img src="<?= base_url() ?>content/imagens/partidos/<?= $info->partido ?>.png"  height="50px"></li>
+                   <li class="list-group-item"><img src="<?= base_url() ?>content/imagens/partidos/<?= $info->imagem_partido?>"  height="50px"></li>
                 <?php endif ?>
 
                 <li class="list-group-item" id='ajaxPagination'><a data-toggle="modal" data-target=".bd-example-modal-lg" href="<?= base_url(); ?>vereadores/pedidos/<?= $info->id ?>" class="btn btn-secondary btn-sm">Pedidos de Providência</a></li>

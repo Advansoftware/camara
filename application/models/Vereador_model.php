@@ -7,9 +7,9 @@
 			}
 
 		    public function get_vereador(){
-		      $this->db->select('*');
-		      $this->db->order_by("nome", "asc");
-		      return $this->db->get('vereadores')->result();
+				$query = $this->db->query("Select v.*, p.imagem as imagem_partido from vereadores v inner join partidos p on v.partido = p.id
+			order  by nome asc");
+		      return $query->result();
 		 
 		    }  
 
