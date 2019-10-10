@@ -12,6 +12,14 @@
            </p>
          </a>
         </div>
+		  <div  class="col" >
+				  <img src="<?=base_url()?>/content/imagens/outubrorosa.png" alt="">
+				  <p></p>
+				  <p>
+
+				  </p>
+			  </a>
+		  </div>
 
         <div  class="col" id="youtube">
           <a href="https://www.youtube.com/channel/UCvIXGcq_hf9io1HpZGOCOuA" target="_blank">
