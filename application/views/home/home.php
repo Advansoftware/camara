@@ -38,7 +38,7 @@
 								 <div class="carousel-caption caption-noticias-top d-block">
 									 <h5><?= $noticia->titulo ?></h5><br/>
 								  </div>
-								<a href="noticias">
+								<a href="noticias/index/1/<?php echo $noticia->id; ?>?id=4">
 								  <img class="d-block w-100" src="<?= base_url();?>content/noticias/destaque/<?=str_replace(' ','_',$noticia->foto)?>">
 								  <div class="carousel-caption caption-slide-noticias d-block">
 									<p class=" ml-3 mr-3"><span class="d-none d-md-block float-left"><?php
