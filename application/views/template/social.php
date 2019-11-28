@@ -13,7 +13,7 @@
          </a>
         </div>
 		  <div  class="col" >
-				  <img src="<?=base_url()?>/content/imagens/outubrorosa.png" alt="">
+				  <img src="<?=base_url()?>/content/imagens/mes/<?=date('m');?>.png" alt="">
 				  <p></p>
 				  <p>
 
