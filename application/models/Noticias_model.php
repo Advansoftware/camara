@@ -18,7 +18,7 @@ class Noticias_model extends CI_Model
 		}
 
 		$query = $this->db->query("
-		select COUNT(*) OVER() AS Size, id, titulo, texto, data, foto, url_facebook, descricao
+		select (select count(*) from noticias) AS Size, id, titulo, texto, data, foto, url_facebook, descricao
 		from noticias order by id desc ".$pagination."");
 		
 		return $query->result_array();
