@@ -25,16 +25,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
           <li class="nav-item">
         <?php endif;?>
         <a class="nav-link" href="<?php echo base_url();?>historia?id=2">Histórico</a>
-      </li>
-      <?php
-      if($get_id==3):
-        ?>
-        <li class="nav-item  active">
-        <?php else : ?>
-          <li class="nav-item">
-        <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>licitacoes?id=3">Licitações</a>
-      </li>
+				</li>
       <?php
       if($get_id==4):
         ?>
@@ -76,8 +67,17 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
           <?php else : ?>
             <a class="dropdown-item" href="<?php echo base_url();?>#sessao">Sessões da Câmara</a>
           <?php endif;?>
-        </div>
-    </ul>
+				</div>
+				<?php
+      if($get_id==3):
+        ?>
+        <li class="nav-item  active">
+        <?php else : ?>
+          <li class="nav-item">
+        <?php endif;?>
+        <a class="nav-link" href="<?php echo base_url();?>licitacoes?id=3">Licitações</a>
+      </li>
+    </ul><!--
     <form class="form-inline my-2 my-lg-2">
       <div class="input-group">
         <input class="form-control p-1" type="search" placeholder="Buscar" aria-label="Search">
@@ -86,7 +86,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
     </div>
       </div>
       
-    </form>
+    </form>-->
   </div>
 </nav>
 
